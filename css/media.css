@@ -1,0 +1,28 @@
+/* Start Media Query */
+@media (max-width: 399px){
+  .home h2.name{
+    font-size: 3rem
+  }
+}
+
+@media (min-width: 400px) and (max-width: 767px) {
+  .home h2.name{
+    font-size: 3rem
+  }
+}
+
+
+/* Small Screen - Tablets */
+@media (min-width: 768px) and (max-width: 991px){
+  .home h2.name{
+    font-size: 3rem
+  }
+
+}
+
+/* Medium Screen */
+@media (min-width: 992px) and (max-width: 1199px){}
+/* Large Screen */
+@media (min-width: 1200px){}
+
+/* End Media Query */
