@@ -24,7 +24,7 @@ body{
   height: 100vh;
   position: relative;
   overflow: hidden;
-  background: url('../images/first.jpeg') no-repeat;
+  background: url('../images/first2.jpeg') no-repeat;
   background-size: cover;
 }
 
@@ -42,40 +42,36 @@ body{
 
 /* Start Section One */
 .home .info{
-  /* position: absolute;
+  position: absolute;
   top: 40%;
-  left: 17%;
-  background-color: rgb(79, 222, 204);
-  padding: 20px;
+  left: 20%;
+  padding: 15px;
   border-radius: 50px 0 50px 0;
-  opacity: 0.9; */
-    position: absolute;
-    top: 40%;
-    left: 11%;
-    padding: 15px;
-    border-radius: 50px 0 50px 0;
-    opacity: 0.9;
-    width: 45%;
+  opacity: 0.9;
+  text-align: center
 }
 
+.info ul.links{
+  list-style-type: none;
+  margin-top: 5px;
+  padding-left: 0
+}
+
+.info ul.links li{
+  display: inline-block;
+  padding-right: 10px;
+}
+.info ul.links li a{color: #57e4d9}
+
 .home h2.name{
-  /* margin: 0;
+  margin: 0;
   padding: 0;
   text-align: center;
-  font-size: 5em;
+  font-size: 3.5em;
   text-transform: uppercase;
-  font-weight: bold;
-  font-family: 'Baloo Tamma', cursive;
-  color: #00458a; */
-  margin: 0;
-padding: 0;
-text-align: center;
-font-size: 3em;
-text-transform: uppercase;
-font-weight: 300;
-font-family: 'Baloo Tamma', cursive;
-color: #040404
-
+  font-weight: 300;
+  font-family: "Baloo Tamma";
+  color: #000
 }
 
 .home .info p.job{
@@ -83,7 +79,7 @@ color: #040404
   text-align: center;
   font-weight: 600;
   font-family: 'Open Sans', sans-serif;
-  color: #ff002f;
+  color: #ed0054;
   font-size: 2rem
 }
 /* End Section One */
@@ -219,7 +215,7 @@ color: #040404
   transform: translate(-50%, -50%);
   text-align: center;
   color: #000;
-  font-size: 20px;
+  font-size: 15px;
   font-family: 'Baloo Tamma', cursive;
 }
 
