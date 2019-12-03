@@ -1,30 +1,29 @@
 @font-face {
   font-family: "Raleway";
-  src: url("../fonts/Raleway/Raleway-Regular.ttf") format('truetype');
+  src: url("../fonts/Raleway/Raleway-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/Open_Sans/OpenSans-Regular.ttf") format('truetype');
+  src: url("../fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Baloo Tamma";
-  src: url("../fonts/Baloo_Tamma/BalooTamma-Regular.ttf") format('truetype');
+  src: url("../fonts/Baloo_Tamma/BalooTamma-Regular.ttf") format("truetype");
 }
 
-
-body{
+body {
   padding: 0;
   margin: 0;
-  font-family: verdana
+  font-family: verdana;
 }
 
-.wrapper{
+.wrapper {
   height: 100vh;
   position: relative;
   overflow: hidden;
-  background: url('../images/first.jpeg') no-repeat;
+  background: url("../images/first.jpeg") no-repeat;
   background-size: cover;
 }
 
@@ -41,44 +40,36 @@ body{
 /* End Navbar */
 
 /* Start Home Section */
-.home{
+.home {
   position: relative;
   min-height: 100vh;
 }
 
-/* .dark-overlay{
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: rgba(0,0,0,0.8);
-  width: 100%;
-  height: 100vh;
-} */
-
-
-.home .info{
+.home .info {
   position: absolute;
   top: 40%;
   left: 20%;
   padding: 15px;
   border-radius: 50px 0 50px 0;
   opacity: 0.9;
-  text-align: center
+  text-align: center;
 }
 
-.info ul.links{
+.info ul.links {
   list-style-type: none;
   margin-top: 5px;
-  padding-left: 0
+  padding-left: 0;
 }
 
-.info ul.links li{
+.info ul.links li {
   display: inline-block;
   padding-right: 10px;
 }
-.info ul.links li a{color: #57e4d9}
+.info ul.links li a {
+  color: #57e4d9;
+}
 
-.home h2.name{
+.home h2.name {
   margin: 0;
   padding: 0;
   text-align: center;
@@ -86,111 +77,123 @@ body{
   text-transform: uppercase;
   font-weight: 300;
   font-family: "Baloo Tamma";
-  color: #00
+  color: #000;
 }
 
-.home .info p.job{
+.home .info p.job {
   text-transform: capitalize;
   text-align: center;
   font-weight: 600;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #ed0054;
   font-size: 2rem;
-  margin-bottom: 30px
+  margin-bottom: 30px;
 }
 /* End Section One */
 
 /* Start Skills Section */
-.services{
-  background: url('../images/two.jpeg') no-repeat;
+.services {
+  background: url("../images/two.jpeg") no-repeat;
   background-size: cover;
   padding-top: 70px;
-  min-height: 100vh;
+  height: 100vh;
 }
 
-.services h2{
+.services h2 {
   margin: 0;
-  font-family: 'Baloo Tamma', cursive;
+  font-family: "Baloo Tamma", cursive;
   margin-bottom: 30px;
-  font-size: 5rem
- }
+  font-size: 5rem;
+}
 
-.services .skill{
+.services .skill {
   text-align: center;
   border: 1px solid #dedede;
   padding-top: 30px;
-  opacity: 0.9
+  opacity: 0.9;
 }
 
-.services .skill h3{
-  font-family: 'Open Sans', sans-serif;
+.services .skill h3 {
+  font-family: "Open Sans", sans-serif;
   font-size: 2.5rem;
   font-weight: bold;
 }
 
-.services .skill p{
-  margin-bottom: 30px
+.services .skill p {
+  margin-bottom: 30px;
 }
 
-.services{background-color: #f8f8f8}
-.services .skill{background-color: #f8f8f8}
-.services .skill h3{margin-bottom: 24px}
-.services .skill p.design-title{
-  font-family: 'Raleway', sans-serif;
+.services {
+  background-color: #f8f8f8;
+}
+.services .skill {
+  background-color: #f8f8f8;
+}
+.services .skill h3 {
+  margin-bottom: 24px;
+}
+.services .skill p.design-title {
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
-  color: #3dd2fb
+  color: #3dd2fb;
 }
 
-.services .skill p.front-title{
-  font-family: 'Raleway', sans-serif;
+.services .skill p.front-title {
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
-  color: #36d1a1
+  color: #36d1a1;
 }
-.services .skill .things ul{
+.services .skill .things ul {
   list-style-type: none;
   padding-left: 0;
   margin-bottom: 30px;
 }
-.services .skill .things ul li{
+.services .skill .things ul li {
   display: inline-block;
 }
 .services .skill .design-skills ul,
 .services .skill .development-skills ul,
-.services .skill .programming-skills ul{
+.services .skill .programming-skills ul {
   list-style-type: none;
   padding-left: 0;
-  font-weight: 600
+  font-weight: 600;
 }
 
-.services .skill #design{color: #3dd2fb}
-.services .skill #front{color: #00cd97}
-.services .skill #back{color: #ffaf38}
+.services .skill #design {
+  color: #3dd2fb;
+}
+.services .skill #front {
+  color: #00cd97;
+}
+.services .skill #back {
+  color: #ffaf38;
+}
 
 .services .skill .development-skills ul li,
 .services .skill .design-skills ul li,
-.services .section:nth-child(2) .skill .programming-skills ul li{
-  font-family: 'Raleway', sans-serif;
+.services .section:nth-child(2) .skill .programming-skills ul li {
+  font-family: "Raleway", sans-serif;
 }
 /* End Skills Section */
 
 /* Start Projects Section */
-.projects{
+.projects {
   background-color: #fbfbfb;
   padding: 70px 0;
 }
 
-.projects h2{
-  font-family: 'Baloo Tamma', cursive;
+.projects h2 {
+  font-family: "Baloo Tamma", cursive;
   margin-bottom: 30px;
-  font-size: 5rem
+  font-size: 5rem;
 }
 
-.projects .proj{
+.projects .proj {
   padding: 0;
   position: relative;
 }
 
-.projects .proj .overlay{
+.projects .proj .overlay {
   position: absolute;
   left: 0;
   top: 0;
@@ -201,10 +204,10 @@ body{
   height: 100%;
   transition: 0.3s ease-in-out;
   transform: scale(0);
-  opacity: 0.8
+  opacity: 0.8;
 }
 
-.projects .proj:hover .overlay{
+.projects .proj:hover .overlay {
   transform: scale(1);
 }
 
@@ -220,11 +223,11 @@ body{
   padding: 5px;
   text-decoration: none;
   transition: 0.3s ease-in-out;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
 }
 
-.text p{
+.text p {
   position: absolute;
   top: 70%;
   left: 50%;
@@ -232,88 +235,67 @@ body{
   text-align: center;
   color: #000;
   font-size: 15px;
-  font-family: 'Baloo Tamma', cursive;
+  font-family: "Baloo Tamma", cursive;
 }
 
-.projects .controls{
-  margin-bottom: 20px
+.projects .controls {
+  margin-bottom: 20px;
 }
 
-.view{
-    display: flex;
-    justify-content: center;
+.view {
+  display: flex;
+  justify-content: center;
 }
 /* End Projects Section */
 
 /* Start Contacts Section */
-.contacts{
+.contacts {
   color: #f8f8f8;
-  background: url('../images/contact-bg.jpg') no-repeat;
+  background: url("../images/contact-bg.jpg") no-repeat;
   background-size: cover;
-  padding: 70px 0
+  padding: 70px 0;
 }
 
-.contacts h2{
+.contacts h2 {
   padding-top: 80px;
   margin: 0;
-  font-family: 'Baloo Tamma', cursive;
+  font-family: "Baloo Tamma", cursive;
   margin-bottom: 30px;
   font-size: 5rem;
-  color: #6CFEB7
+  color: #6cfeb7;
 }
-.contacts .controls .form-group .form-control{
+.contacts .controls .form-group .form-control {
   background-color: #1b242f;
   border-color: #444;
   border-radius: 0;
   opacity: 0.9;
 }
 
-.contacts .controls ul.links{
+.contacts .controls ul.links {
   list-style-type: none;
   margin-top: 5px;
-  padding-left: 0
+  padding-left: 0;
 }
 
-.contacts .controls ul.links li{
+.contacts .controls ul.links li {
   display: inline-block;
-  padding-right: 10px
+  padding-right: 10px;
 }
 
-.contacts .controls .text-muted{
-  margin-top: 30px
+.contacts .controls .text-muted {
+  margin-top: 30px;
 }
 
-.contacts .controls ul.links li a{
+.contacts .controls ul.links li a {
   color: #69fdb8;
   opacity: 0.3;
   -webkit-transition: opacity 0.3s ease-in-out;
   -moz-transition: opacity 0.3s ease-in-out;
   -o-transition: opacity 0.3s ease-in-out;
   -transition: opacity 0.3s ease-in-out;
-
-
 }
 
-.contacts .controls ul.links li a:hover{
+.contacts .controls ul.links li a:hover {
   opacity: 1;
-
 }
 /* End Contacts Section */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- End HireMe Section */
