@@ -7,11 +7,21 @@
   .projects .proj .overlay {
     background: none;
   }
+
+  .text {
+    display: none;
+  }
 }
 
 @media (min-width: 400px) and (max-width: 767px) {
   .home h2.name {
     font-size: 3rem;
+  }
+  .projects .proj .overlay {
+    background: none;
+  }
+  .text {
+    display: none;
   }
 }
 
