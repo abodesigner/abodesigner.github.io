@@ -13,18 +13,13 @@
   src: url("../fonts/Baloo_Tamma/BalooTamma-Regular.ttf") format("truetype");
 }
 
-body {
-  padding: 0;
-  margin: 0;
-  font-family: verdana;
-}
-
 .wrapper {
   height: 100vh;
   position: relative;
   overflow: hidden;
   background: url("../images/first.jpeg") no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 /* Start Navbar */
