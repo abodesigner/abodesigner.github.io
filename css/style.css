@@ -20,6 +20,7 @@
   background: url("../images/first.jpeg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  background-position: center center;
 }
 
 /* Start Navbar */
