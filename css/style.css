@@ -23,15 +23,35 @@
   background-position: center center;
 }
 
+.dark-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  height: 100vh;
+}
+
 /* Start Navbar */
+
+.wrapper .navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+}
+
 .wrapper .navbar .navbar-nav {
   display: inline-block;
   float: none;
   vertical-align: top;
 }
 
+.wrapper .navbar-nav li a {
+  color: #fff;
+}
+
 .wrapper .navbar .navbar-collapse {
-  text-align: center;
+  text-align: right;
 }
 /* End Navbar */
 
@@ -49,20 +69,7 @@
   opacity: 0.9;
   text-align: center;
   transform: translate(-50%, -50%);
-}
-
-.info ul.links {
-  list-style-type: none;
-  margin-top: 5px;
-  padding-left: 0;
-}
-
-.info ul.links li {
-  display: inline-block;
-  padding-right: 10px;
-}
-.info ul.links li a {
-  color: #57e4d9;
+  width: 100%;
 }
 
 .home h2.name {
@@ -73,7 +80,7 @@
   text-transform: uppercase;
   font-weight: 300;
   font-family: "Baloo Tamma";
-  color: #000;
+  color: #fff;
 }
 
 .home .info p.job {
@@ -81,7 +88,7 @@
   text-align: center;
   font-weight: 600;
   font-family: "Open Sans", sans-serif;
-  color: #ed0054;
+  color: #fff92f;
   font-size: 2rem;
   margin-bottom: 30px;
 }
