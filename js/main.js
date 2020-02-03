@@ -53,4 +53,10 @@ $(document).ready(function() {
 
   // Get the full year
   $("#year").text(new Date().getFullYear());
+
+  if ($(window).scroll() > 100) {
+    $(".navbar").addClass("custom-nav");
+  } else {
+    $(".navbar").removeClass("custom-nav");
+  }
 });
