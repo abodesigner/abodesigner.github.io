@@ -59,6 +59,16 @@
 .wrapper .navbar .navbar-collapse {
   text-align: right;
 }
+
+span#typed {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 4rem;
+  transform: translate(-50%, -50%);
+  font-family: "Baloo Tamma";
+}
 /* End Navbar */
 
 /* Start Home Section */
@@ -76,17 +86,17 @@
   width: 100%;
 }
 
-.home h2.name {
+.info h2.name {
   margin: 0;
   padding: 0;
   text-align: center;
-  font-size: 50px;
+  font-size: 72px;
   text-transform: uppercase;
   font-family: "Baloo Tamma";
   color: #fff;
 }
 
-.home h2.name span {
+.info h2.name span {
   display: block;
   color: #05f2f2;
   font-size: 72px;

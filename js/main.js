@@ -59,4 +59,12 @@ $(document).ready(function() {
   } else {
     $(".navbar").removeClass("custom-nav");
   }
+
+  // animate test on hero section
+  var typed = new Typed("#typed", {
+    stringsElement: "#typed-strings",
+    typeSpeed: 40,
+    loop: true,
+    loopCount: 3
+  });
 });
