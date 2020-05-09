@@ -1,7 +1,7 @@
 // A $( document ).ready() block.
-$(document).ready(function() {
+$(document).ready(function () {
   // hidden collapse menu in small screen
-  $(".nav li a").click(function(event) {
+  $(".nav li a").click(function (event) {
     // only do this if navigation is visible, otherwise you see jump in navigation while collapse() is called
     if (
       $(".navbar-collapse").is(":visible") &&
@@ -15,7 +15,7 @@ $(document).ready(function() {
   var mixer = mixitup("#Container");
 
   // Add smooth scrolling to all links
-  $("a").on("click", function(event) {
+  $("a").on("click", function (event) {
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
       // Prevent default anchor click behavior
@@ -31,7 +31,7 @@ $(document).ready(function() {
           scrollTop: $(hash).offset().top
         },
         800,
-        function() {
+        function () {
           // Add hash (#) to URL when done scrolling (default click behavior)
           window.location.hash = hash;
         }
@@ -41,13 +41,13 @@ $(document).ready(function() {
 
   //hide placeholder on focus
   var $place;
-  $(":input").on("focus", function() {
+  $(":input").on("focus", function () {
     $place = $(this).attr("placeholder");
     $(this).attr("placeholder", "");
   });
 
   //blur placeholder on focus
-  $(":input").on("blur", function() {
+  $(":input").on("blur", function () {
     $(this).attr("placeholder", $place);
   });
 
@@ -65,6 +65,6 @@ $(document).ready(function() {
     stringsElement: "#typed-strings",
     typeSpeed: 40,
     loop: true,
-    loopCount: 3
+    loopCount: Infinity
   });
 });
