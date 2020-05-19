@@ -61,10 +61,16 @@ $(document).ready(function () {
   }
 
   // animate test on hero section
-  var typed = new Typed("#typed", {
-    stringsElement: "#typed-strings",
+
+  var typed = new Typed('#typed', {
+    // Waits 1000ms after typing "First"
+    strings: ['Hello. ^1000', 'I\'m Mohammed Abo Salem. ^500', 'Front End Developer. ^1000', 'Design Responsive Website ^1000'],
     typeSpeed: 40,
-    loop: true,
-    loopCount: Infinity
+    backSpeed: 20
+
   });
+
+
+
+
 });

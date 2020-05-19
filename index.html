@@ -45,6 +45,7 @@
                         <li><a href="#home">Home</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#projects">Projects <span class="sr-only">(current)</span></a></li>
+                        <li><a href="blog.html">My Blog</a></li>
                         <li><a href="#contacts">Contact Me (+2)01276412898</a></li>
                     </ul>
                 </div>
@@ -55,17 +56,12 @@
         <!-- Start Home Section -->
         <section class="home" id="home">
             <div class="dark-overlay">
-
-                <div class="info" id="typed-strings">
-                    <p class="hello">Hello,</p>
-                    <p>I'm Mohamed Abo Salem</p>
-                    <p>Front End Developer</p>
-                </div>
-                <span id="typed"></span>
+                <p><span id="typed"></span></p>
             </div>
         </section>
         <!-- End Home Section -->
     </div>
+
     <!-- Start Services Section -->
     <section class="services" id="services">
         <div class="container">
@@ -110,27 +106,31 @@
             <h2 class="text-center">My Projects</h2>
             <div class="row">
                 <div class="col-xs-12 text-center">
-                    <div class="btn-group controls" role="group" aria-label="btn controls">
+                    <div class="btn-group btn-group-lg controls" role="group" aria-label="btn controls">
                         <button type="button" class="btn btn-default selected filter" data-filter="all">All</button>
                         <button type="button" class="btn btn-default filter" data-filter=".one">Landing Page</button>
                         <button type="button" class="btn btn-default filter" data-filter=".multi">Multi Pages</button>
+                        <button type="button" class="btn btn-default filter" data-filter=".js">JS challenges</button>
                     </div>
                 </div>
             </div>
             <div class="row" id="Container">
 
                 <div class="col-md-4 col-xs-6 proj mix multi">
-                    <img src="images/rsz_lemonall.png" alt="lemonall" class="img-responsive">
+                    <img src="images/rsz_lemonall.png" alt="lemonall" class="img-responsive thumbnail">
                     <div class="overlay">
                         <div class="text">
-                            <a href="https://abodesigner.github.io/lemonAI/" target="_blank"><i
-                                    class="fas fa-paperclip"></i> lemonAI</a>
-                            <p>Software House</p>
+                            <div class="data">
+                                <h3>lemonAI</h3>
+                                <h4>Software House</h4>
+                            </div>
+                            <a href="https://abodesigner.github.io/lemonAI/" target="_blank">
+                                <i class="fas fa-eye fa-2x"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-xs-6 proj mix multi">
-                    <img src="images/pyramids2.png" alt="Pyramids-kuwait" class="img-responsive">
+                    <img src="images/pyramids2.png" alt="Pyramids-kuwait" class="img-responsive thumbnail">
                     <div class="overlay">
                         <div class="text">
                             <a href="https://abodesigner.github.io/Pyramids-kuwait/" target="_blank"><i
@@ -140,7 +140,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-xs-6 proj mix multi">
-                    <img src="images/rsz_andalusia_group.png" alt="andalusia_group" class="img-responsive">
+                    <img src="images/rsz_andalusia_group.png" alt="andalusia_group" class="img-responsive thumbnail">
                     <div class="overlay">
                         <div class="text">
                             <a href="https://abodesigner.github.io/Andalusia-Group/" target="_blank"><i
@@ -150,7 +150,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-xs-6 proj mix one">
-                    <img src="images/dashboard.jpg" alt="dashboard" class="img-responsive">
+                    <img src="images/dashboard.jpg" alt="dashboard" class="img-responsive thumbnail">
                     <div class="overlay">
                         <div class="text">
                             <a href="https://abodesigner.github.io/Dashboard-UI/" target="_blank"><i
@@ -161,7 +161,7 @@
                 </div>
 
                 <div class="col-md-4 col-xs-6 proj mix one">
-                    <img src="images/fresh.jpg" alt="freshness" class="img-responsive">
+                    <img src="images/fresh.jpg" alt="freshness" class="img-responsive thumbnail">
                     <div class="overlay">
                         <div class="text">
                             <a href="https://abodesigner.github.io/Food-Freshness-Checker/" target="_blank"><i
@@ -172,7 +172,7 @@
                 </div>
 
                 <div class="col-md-4 col-xs-6 proj mix multi">
-                    <img src="images/coffeerun.jpg" alt="coffeerun" class="img-responsive">
+                    <img src="images/coffeerun.jpg" alt="coffeerun" class="img-responsive thumbnail">
                     <div class="overlay">
                         <div class="text">
                             <a href="https://abodesigner.github.io/coffeeRun/" target="_blank"><i
@@ -183,7 +183,7 @@
                 </div>
 
                 <div class="col-md-4 col-xs-6 proj mix multi">
-                    <img src="images/fresh.jpg" alt="freshness" class="img-responsive">
+                    <img src="images/fresh.jpg" alt="freshness" class="img-responsive thumbnail">
                     <div class="overlay">
                         <div class="text">
                             <a href="https://abodesigner.github.io/Food-Freshness-Checker/" target="_blank"><i
@@ -205,7 +205,7 @@
                 </div>
 
                 <div class="col-md-4 col-xs-6 proj mix one">
-                    <img src="images/proj3.jpg" alt="gTarget_project" class="img-responsive">
+                    <img src="images/proj3.jpg" alt="gTarget_project" class="img-responsive thumbnail">
                     <div class="overlay">
                         <div class="text">
                             <a href="https://abodesigner.github.io/golden-Target/" target="_blank"><i
@@ -217,7 +217,7 @@
                 </div>
 
                 <div class="col-md-4 col-xs-6 proj mix one">
-                    <img src="images/proj4.jpeg" alt="digitopia_project" class="img-responsive">
+                    <img src="images/proj4.jpeg" alt="digitopia_project" class="img-responsive thumbnail">
                     <div class="overlay">
                         <div class="text">
                             <a href="https://abodesigner.github.io/digitopia/" target="_blank"><i
@@ -228,7 +228,7 @@
                 </div>
 
                 <div class="col-md-4 col-xs-6 proj mix multi">
-                    <img src="images/proj6.jpg" alt="glozzmon" class="img-responsive">
+                    <img src="images/proj6.jpg" alt="glozzmon" class="img-responsive thumbnail">
                     <div class="overlay">
                         <div class="text">
                             <a href="https://abodesigner.github.io/glozzmon/" target="_blank"><i
