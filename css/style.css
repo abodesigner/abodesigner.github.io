@@ -272,10 +272,10 @@ span.hello{
   opacity: 0.8;
 }
 
-/* .projects .proj:hover .overlay {
+.projects .proj:hover .overlay {
   transform: scale(1);
   opacity: 1;
-} */
+}
 
 .text a {
   color: #000;
