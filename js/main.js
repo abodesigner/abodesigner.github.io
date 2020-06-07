@@ -64,10 +64,18 @@ $(document).ready(function () {
 
   var typed = new Typed('#typed', {
     // Waits 1000ms after typing "First"
-    strings: ['Hello. ^1000', 'I\'m Mohammed Abo Salem. ^500', 'Front End Developer. ^1000', 'Design Responsive Website ^1000'],
+    strings: ['Hello. ^1000',
+      'I\'m Mohammed Abo Salem. ^500',
+      'Front End Developer. ^1000',
+      'Design Responsive Website ^1000',
+      'Use HTML', 'CSS', '^1000 JavaScript', 'JQuery', 'Bootstrap 4'],
+    stringsElement: null,
     typeSpeed: 40,
     backSpeed: 20,
-    loop:'infinite'
+    loop: true,
+    loopCount: Infinity,
+    showCursor: true,
+    cursorChar: '|',
 
   });
 

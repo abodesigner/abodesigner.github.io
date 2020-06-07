@@ -18,7 +18,7 @@
   height: 100vh;
   position: relative;
   overflow: hidden;
-  /* background: url("../images/main-bg.jpg") no-repeat; */
+  background: url("../images/bg2.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
@@ -44,15 +44,19 @@
   top: 27px;
 }
 
-/* .dark-overlay {
+.home {
   position: absolute;
+  top: 0;
   left: 0;
   right: 0;
-  top: 0;
   bottom: 0;
-  background: #f6f578;
-  height: 100vh;
-} */
+
+  min-height: 500px;
+  line-height: 500px;
+  text-align: center;
+  background: rgba(0,0,0,0.6);
+
+}
 
 /* Start Navbar */
 .wrapper .navbar-default {
@@ -98,7 +102,7 @@ span#typed {
   font-size: 6rem;
   transform: translate(-50%, -50%);
   font-family: 'open sans';
-  color: #222831;
+  color: #F2E205;
 }
 
 
@@ -108,30 +112,11 @@ span#typed {
 .home {
 }
 
+
 span.hello{
   font-size: 4rem;
 }
 
-.home .info {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  padding: 15px;
-  opacity: 0.9;
-  text-align: center;
-  transform: translate(-50%, -50%);
-  width: 100%;
-}
-
-.info h2.name {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  font-size: 72px;
-  text-transform: uppercase;
-  font-family: "Baloo Tamma";
-  color: #fff;
-}
 
 .info h2.name span {
   display: block;
@@ -152,6 +137,30 @@ span.hello{
   font-weight: bold;
   font-size: 20px;
   margin-bottom: 30px;
+}
+
+.project-btn{
+  position: absolute;
+  top:80%;
+
+}
+
+.home .fas{
+  animation: updown 2s linear infinite;
+
+}
+
+@keyframes updown {
+  0% {
+    top: -10%
+  }
+
+}
+
+.home .btn-warning{
+  background-color: #F2E205;
+  border-color: #F2E205;
+  color: #333
 }
 /* End Section One */
 
