@@ -62,7 +62,7 @@ $(document).ready(function () {
 
   // animate test on hero section
 
-  var typed = new Typed('#typed', {
+  var typed = new Typed('.element', {
     // Waits 1000ms after typing "First"
     strings: ['Hello. ^1000',
       'I\'m Mohammed Abo Salem. ^500',
