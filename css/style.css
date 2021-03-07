@@ -13,36 +13,6 @@
   src: url("../fonts/Baloo_Tamma/BalooTamma-Regular.ttf") format("truetype");
 }
 
-/* .wrapper {
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-  background: url("../images/bg2.jpg") no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center center;
-} */
-
-/* .wrapper:before {
-  content: "";
-  display: block;
-  position: absolute;
-  border-radius: 100% 50%;
-  background-color: white;
-  right: -5px;
-  top: 40px;
-} */
-
-/* .wrapper:after {
-  content: "";
-  display: block;
-  position: absolute;
-  border-radius: 100% 50%;
-  background-color: #e0efe3;
-  left: 0;
-  top: 27px;
-} */
-
 /* Start Home Section */
 .home {
   height: 100vh;
@@ -58,6 +28,14 @@
 .home .main-text {
   color: #fff;
   margin-top: 100px;
+}
+
+.home .main-text h1 {
+  font-size: 6rem;
+}
+
+.home .main-text h2 {
+  font-size: 5.5rem;
 }
 
 .home .btn-warning {

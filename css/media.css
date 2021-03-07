@@ -1,9 +1,12 @@
 /* Start Media Query */
 @media (max-width: 399px) {
-  .home h2.name {
+  .home .main-text h1 {
     font-size: 3rem;
   }
 
+  .home .main-text h2 {
+    font-size: 4.5rem;
+  }
   .projects .proj .overlay {
     background: none;
   }
@@ -14,8 +17,12 @@
 }
 
 @media (min-width: 400px) and (max-width: 767px) {
-  .home h2.name {
+  .home .main-text h1 {
     font-size: 3rem;
+  }
+
+  .home .main-text h2 {
+    font-size: 4rem;
   }
   .projects .proj .overlay {
     background: none;
