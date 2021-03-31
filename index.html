@@ -27,15 +27,24 @@
     <section class="home" id="home">
         <div class="container">
             <div class="main-text">
-                <h1 class="yellow-text">Hi, </h1>
+                <h1 class="hello-text">Hi, </h1>
                 <h2>I'm <strong>Mohammed</strong> </h2>
                 <p> Front End Developer </p>
+
+
+            </div>
+            <div class="control-btn">
+                <a href="https://drive.google.com/file/d/1URIhYgmL9rwKAIZo6ZdXfNP5R9tFvQGB/view?usp=sharing"
+                    class="btn btn-primary">
+                    Download CV
+                    <i class="fas fa-download"></i>
+                </a>
+                <a href="#projects" class="btn btn-warning project-btn">
+                    See Projects
+                    <i class="fas fa-long-arrow-alt-down"></i>
+                </a>
             </div>
 
-            <a href="#projects" class="btn btn-warning project-btn">
-                <i class="fas fa-long-arrow-alt-down"></i>
-                See Projects
-            </a>
 
         </div>
     </section>
@@ -43,7 +52,7 @@
 
     <!-- Start Services Section -->
     <section class="services" id="services">
-        <h2 class="text-center">What can I do</h2>
+        <h2 class="heading text-center">What can I do</h2>
         <div class="container">
             <div class="row">
                 <div class="col-12 skill">
@@ -53,11 +62,15 @@
                         I can grow your profits by building landing pages for your company or business.
                     </p>
                     <ul class="skills">
-                        <li><img src="images/html5.png" class="img-fluid"></li>
-                        <li><img src="images/css-3.png" class="img-fluid"></li>
-                        <li><img src="images/javascript.png" class="img-fluid"></li>
-                        <li><img src="images/bootstrap.png" class="img-fluid"></li>
-                        <li><img src="images/vue9.svg" class="img-fluid" width="64"></li>
+                        <li><img src="images/html5.png" alt="HTML5" class="img-fluid"></li>
+                        <li><img src="images/css-3.png" alt="CSS3" class="img-fluid"></li>
+                        <li><img src="images/sass.png" alt="SASS" class="img-fluid"></li>
+                        <li><img src="images/javascript.png" alt="js" class="img-fluid"></li>
+                        <li><img src="images/bootstrap.png" alt="bootstrap" class="img-fluid"></li>
+                        <li><img src="images/vuejs.png" alt="vuejs" class="img-fluid"></li>
+                        <li><img src="images/nodejs.png" alt="Nodejs" class="img-fluid"></li>
+                        <li><img src="images/mongodb.png" alt="mongodb" class="img-fluid"></li>
+                        <li><img src="images/git.png" alt="GIT" class="img-fluid"></li>
                     </ul>
 
                 </div>
@@ -79,27 +92,26 @@
 
     <!-- Start Projects Section -->
     <section class="projects" id="projects">
-        <h2 class="text-center">My Projects</h2>
+        <h2 class="heading text-center">My Projects</h2>
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
                     <div class="btn-group btn-group-lg controls" role="group" aria-label="btn controls">
-                        <button type="button" class="btn btn-light selected filter" data-filter="all">All</button>
-                        <button type="button" class="btn btn-light filter" data-filter=".one">Landing Page</button>
-                        <button type="button" class="btn btn-light filter" data-filter=".multi">Multi Pages</button>
-
+                        <button type="button" class="btn btn-danger selected filter" data-filter="all">All</button>
+                        <button type="button" class="btn btn-dark filter" data-filter=".one">Landing Pages</button>
+                        <button type="button" class="btn btn-info filter" data-filter=".fstack">FullStack Apps</button>
                     </div>
                 </div>
             </div>
             <div class="row" id="Container">
-
-                <div class="col-md-4 col-sm-6 proj mix multi">
-                    <img src="images/onemall.jpg" alt="oneemal" class="img-fluid img-thumbnail">
+                <div class="col-md-4 col-sm-6 proj mix one">
+                    <img src="images/onemall.jpg" alt="oneemal" class="img-fluid">
                     <div class="overlay">
                         <div class="text">
                             <div class="data">
-                                <h5>OneEmall</h5>
-                                <h6>E-commerece</h6>
+                                <h2>OneEmall</h2>
+                                <h5 class="mb-4">E-commerece</h5>
+                                <h6>HTML-CSS-Jquery-Bootstrap</h6>
                             </div>
                             <a href="https://www.oneemall.net/" target="_blank">
                                 <i class="fas fa-eye fa-2x"></i></a>
@@ -107,13 +119,14 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 col-sm-6 proj mix multi">
-                    <img src="images/wtxhub.jpg" alt="wtxhub" class="img-fluid img-thumbnail">
+                <div class="col-md-4 col-sm-6 proj mix one">
+                    <img src="images/wtxhub.jpg" alt="wtxhub" class="img-fluid">
                     <div class="overlay">
                         <div class="text">
                             <div class="data">
-                                <h5>WTXHUB</h5>
-                                <h6>Import & Export CO.</h6>
+                                <h2>WTXHUB</h2>
+                                <h5 class="mb-4">Import & Export CO.</h5>
+                                <h6>HTML - CSS - Jquery - Bootstrap</h6>
                             </div>
                             <a href="https://abodesigner.github.io/wtxhub/" target="_blank">
                                 <i class="fas fa-eye fa-2x"></i></a>
@@ -121,26 +134,28 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 col-sm-6 proj mix multi">
-                    <img src="images/rsz_lemonall.png" alt="lemonall" class="img-fluid img-thumbnail">
+                <div class="col-md-4 col-sm-6 proj mix one">
+                    <img src="images/rsz_lemonall.png" alt="lemonall" class="img-fluid">
                     <div class="overlay">
                         <div class="text">
                             <div class="data">
-                                <h5>lemonAI</h5>
-                                <h6>Software House</h6>
+                                <h2>lemonAI</h2>
+                                <h5 class="mb-4">Software House</h5>
+                                <h6>HTML-CSS-Jquery-Bootstrap</h6>
                             </div>
                             <a href="https://abodesigner.github.io/lemonAI/" target="_blank">
                                 <i class="fas fa-eye fa-2x"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 proj mix multi">
-                    <img src="images/pyramids2.png" alt="Pyramids-kuwait" class="img-fluid img-thumbnail">
+                <div class="col-md-4 col-sm-6 proj mix one">
+                    <img src="images/socialmedia.jpg" alt="Pyramids-kuwait" class="img-fluid">
                     <div class="overlay">
                         <div class="text">
                             <div class="data">
-                                <h5>Pyramids-Group</h5>
-                                <h6>Digital Sevices co.</h6>
+                                <h2>Pyramids-Group</h5>
+                                    <h5 class="mb-4">Marketing & Digital Sevices</h5>
+                                    <h6>HTML-CSS-Jquery-Bootstrap</h6>
                             </div>
                             <a href="https://abodesigner.github.io/Pyramids-kuwait/" target="_blank">
                                 <i class="fas fa-eye fa-2x"></i> </a>
@@ -149,56 +164,43 @@
                 </div>
 
                 <div class="col-md-4 col-sm-6 proj mix one">
-                    <img src="images/rsz_andalusia_group.png" alt="andalusia_group" class="img-fluid img-thumbnail">
+                    <img src="images/andlusia.jpg" alt="andalusia_group" class="img-fluid">
                     <div class="overlay">
                         <div class="text">
                             <div class="data">
-                                <h5>Andalusia-Group</h5>
-                                <h6>Medical Sevices co.</h6>
+                                <h2>Andalusia-Group</h2>
+                                <h5 class="mb-4">Medical Sevices co.</h5>
+                                <h6>HTML-CSS-Jquery-Bootstrap</h6>
                             </div>
                             <a href="https://abodesigner.github.io/Andalusia-Group/" target="_blank">
                                 <i class="fas fa-eye fa-2x"></i> </a>
-
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-md-4 col-sm-6 proj mix one">
-                    <img src="images/dashboard.jpg" alt="dashboard" class="img-fluid img-thumbnail">
-                    <div class="overlay">
-                        <div class="text">
-                            <div class="data">
-                                <h5>Dashboard UI</h5>
-                                <h6>Bootstrap 4 Dashboard UI</h6>
-                            </div>
-                            <a href="https://abodesigner.github.io/Dashboard-UI/" target="_blank">
-                                <i class="fas fa-eye fa-2x"></i> </a>
-                            <p></p>
-                        </div>
-                    </div>
-                </div> -->
 
                 <div class="col-md-4 col-sm-6 proj mix one">
-                    <img src="images/fresh.jpg" alt="freshness" class="img-fluid img-thumbnail">
+                    <img src="images/fresh.jpg" alt="freshness" class="img-fluid">
                     <div class="overlay">
                         <div class="text">
                             <div class="data">
-                                <h5>Freshness Food Checker</h5>
-                                <h6>Mobile App landing page</h6>
+                                <h2>Freshness Food Checker</h2>
+                                <h5 class="mb-4">Mobile App landing page</h5>
+                                <h6>HTML-CSS-Jquery-Bootstrap</h6>
                             </div>
                             <a href="https://abodesigner.github.io/Food-Freshness-Checker/" target="_blank">
                                 <i class="fas fa-eye fa-2x"></i> </a>
-
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-4 col-sm-6 proj mix multi">
-                    <img src="images/coffeerun.jpg" alt="coffeerun" class="img-fluid img-thumbnail">
+                <div class="col-md-4 col-sm-6 proj mix one">
+                    <img src="images/coffeerun.jpg" alt="coffeerun" class="img-fluid">
                     <div class="overlay">
                         <div class="text">
                             <div class="data">
-                                <h5>CoffeeRun</h5>
-                                <h6>coffeeShop</h6>
+                                <h2>CoffeeRun</h2>
+                                <h5 class="mb-4">coffeeShop</h5>
+                                <h6>HTML-CSS-Jquery-Bootstrap</h6>
                             </div>
                             <a href="https://abodesigner.github.io/coffeeRun/" target="_blank">
                                 <i class="fas fa-eye fa-2x"></i> </a>
@@ -213,72 +215,72 @@
                     <div class="overlay">
                         <div class="text">
                             <div class="data">
-                                <h5>Mercatto</h5>
-                                <h6>Online Order Coffee</h6>
+                                <h2>Mercatto</h2>
+                                <h5 class="mb-4">Online Order Coffee</h5>
+                                <h6>HTML-CSS-Jquery-Bootstrap</h6>
                             </div>
                             <a href="https://abodesigner.github.io/mercato-Coffee/" target="_blank">
                                 <i class="fas fa-eye fa-2x"></i> </a>
-
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-4 col-sm-6 proj mix one">
-                    <img src="images/proj3.jpg" alt="gTarget_project" class="img-fluid img-thumbnail">
+                    <img src="images/proj3.jpg" alt="gTarget_project" class="img-fluid">
                     <div class="overlay">
                         <div class="text">
                             <div class="data">
-                                <h5>goldenTarget</h5>
-                                <h6>Hydro-electrical co.</h6>
+                                <h2>goldenTarget</h2>
+                                <h5 class="mb-4">Hydro-electrical co.</h5>
+                                <h6>HTML - CSS - Jquery - Bootstrap</h6>
                             </div>
                             <a href="https://abodesigner.github.io/golden-Target/" target="_blank">
                                 <i class="fas fa-eye fa-2x"></i>
                             </a>
-
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-4 col-sm-6 proj mix one">
-                    <img src="images/proj4.jpeg" alt="digitopia_project" class="img-fluid img-thumbnail">
+                    <img src="images/proj4.jpeg" alt="digitopia_project" class="img-fluid">
                     <div class="overlay">
                         <div class="text">
                             <div class="data">
-                                <h5>Digitopia</h5>
-                                <h6>Software House</h6>
+                                <h2>Digitopia</h2>
+                                <h5 class="mb-4">Software House</h5>
+                                <h6>HTML-CSS-Jquery-Bootstrap</h6>
                             </div>
                             <a href="https://abodesigner.github.io/digitopia/" target="_blank">
                                 <i class="fas fa-eye fa-2x"></i> </a>
-
                         </div>
                     </div>
                 </div>
 
-                <!-- <div class="col-md-4 col-sm-6 proj mix multi">
-                    <img src="images/proj6.jpg" alt="glozzmon" class="img-fluid img-thumbnail">
+                <div class="col-md-4 col-sm-6 proj mix one">
+                    <img src="images/books.jpg" alt="elwaha" class="img-fluid">
                     <div class="overlay">
                         <div class="text">
                             <div class="data">
-                                <h5>glozzmon</h5>
-                                <h6>Multi-pages website</h6>
-                            </div>
-                            <a href="https://abodesigner.github.io/glozzmon/" target="_blank">
-                                <i class="fas fa-eye fa-2x"></i>
-                            </a>
-
-                        </div>
-                    </div>
-                </div> -->
-
-                <div class="col-md-4 col-sm-6 proj mix multi">
-                    <img src="images/proj7.jpg" alt="elwaha" class="img-fluid img-thumbnail">
-                    <div class="overlay">
-                        <div class="text">
-                            <div class="data">
-                                <h5>El Waha</h5>
-                                <h6>Multi-pages website</h6>
+                                <h2>El Waha</h2>
+                                <h5 class="mb-4">Sell/Borrow Books</h5>
+                                <h6>HTML-CSS-Jquery-Bootstrap</h6>
                             </div>
                             <a href="https://abodesigner.github.io/el-waha/" target="_blank">
+                                <i class="fas fa-eye fa-2x"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 proj mix fstack">
+                    <img src="images/todolist.jpg" alt="todolist" class="img-fluid">
+                    <div class="overlay">
+                        <div class="text">
+                            <div class="data">
+                                <h2>todos</h2>
+                                <h5 class="mb-4">Basic CRUD operations</h5>
+                                <h6>Nodejs-Expressjs-MongoDB-Vuejs-Axios</h6>
+                            </div>
+                            <a href="https://todos-mevn.herokuapp.com/" target="_blank">
                                 <i class="fas fa-eye fa-2x"></i>
                             </a>
 
