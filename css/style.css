@@ -14,8 +14,13 @@
 }
 
 @font-face {
-  font-family: "Engagement", cursive;
-  src: url("https://fonts.googleapis.com/css2?family=Engagement&display=swap");
+  font-family: "Oswald", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+}
+
+/* General */
+button:focus {
+  outline: 0;
 }
 
 /* Start Home Section */
@@ -45,18 +50,18 @@
 
 .home .main-text h1 {
   font-size: 6rem;
-  font-family: "Engagement", cursive;
+  font-family: "Oswald", sans-serif;
 }
 
 .home .main-text h2 {
   font-size: 5.5rem;
-  font-family: "Engagement", cursive;
+  font-family: "Oswald", sans-serif;
 }
 
 .home .main-text p {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   color: #151616;
-  font-family: "Engagement", cursive;
+  font-family: "Oswald", sans-serif;
 }
 
 .home .btn-warning {
