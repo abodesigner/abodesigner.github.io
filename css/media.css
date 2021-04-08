@@ -1,11 +1,14 @@
 /* Start Media Query */
 @media (max-width: 399px) {
+  .home {
+    background-position: 100% 100%;
+  }
   .home .main-text h1 {
     font-size: 3rem;
   }
 
   .home .main-text h2 {
-    font-size: 4.5rem;
+    font-size: 3rem;
   }
   .projects .proj .overlay {
     background: none;
@@ -17,18 +20,43 @@
 }
 
 @media (min-width: 400px) and (max-width: 767px) {
+  .home {
+    background: none;
+    height: 500px;
+  }
+
   .home .main-text h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
+  }
+
+  .home .main-text {
+    color: #000;
+    margin-top: 50px;
+  }
+  .home .main-text h1 {
+    font-size: 4rem;
+  }
+
+  .home .main-text p {
+    font-size: 1.2rem;
   }
 
   .home .main-text h2 {
-    font-size: 4rem;
+    font-size: 3.5rem;
+  }
+
+  .services .skill h3 {
+    font-size: 1.3rem;
   }
   .projects .proj .overlay {
     background: none;
   }
   .text {
     display: none;
+  }
+
+  .control-btn {
+    bottom: 35%;
   }
 }
 
@@ -44,6 +72,13 @@
 }
 /* Large Screen */
 @media (min-width: 1200px) {
+  .home .main-text {
+    color: #000;
+    margin-top: 100px;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+  }
 }
 
 /* End Media Query */
