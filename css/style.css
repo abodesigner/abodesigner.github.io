@@ -34,19 +34,19 @@ button:focus {
   text-align: center;
 }
 
-/* .home .main-text {
+.home .main-text {
   color: #000;
-  margin-top: 100px;
   position: absolute;
-  top: 10%;
-  left: 5%;
-} */
+  top: 30%;
+  left: 20%;
+  transform: translate(-30%, -20%);
+}
 
-.control-btn {
+/* .control-btn {
   position: absolute;
   left: 17%;
   bottom: 25%;
-}
+} */
 
 .home .main-text h1 {
   font-size: 6rem;
@@ -185,7 +185,7 @@ button:focus {
   /* margin-bottom: 20px; */
 }
 
-.projects .proj .overlay {
+/* .projects .proj .overlay {
   position: absolute;
   left: 0;
   top: 0;
@@ -202,7 +202,7 @@ button:focus {
 .projects .proj:hover .overlay {
   transform: scale(1);
   opacity: 1;
-}
+} */
 
 .text a {
   color: #000;

@@ -1,8 +1,9 @@
-/* Start Media Query */
-@media (max-width: 399px) {
-  .home {
-    background-position: 100% 100%;
-  }
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
   .home .main-text h1 {
     font-size: 3rem;
   }
@@ -10,75 +11,62 @@
   .home .main-text h2 {
     font-size: 3rem;
   }
-  .projects .proj .overlay {
-    background: none;
-  }
 
-  .text {
-    display: none;
+  .home .main-text p {
+    font-size: 1rem;
+  }
+  .services .skill h3 {
+    font-size: 1.5rem;
   }
 }
 
-@media (min-width: 400px) and (max-width: 767px) {
-  .home {
-    background: none;
-    height: 500px;
-  }
-
-  .home .main-text h1 {
-    font-size: 3.5rem;
-  }
-
-  .home .main-text {
-    color: #000;
-    margin-top: 50px;
-  }
-  .home .main-text h1 {
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .home .main-text h2 {
     font-size: 4rem;
   }
 
   .home .main-text p {
     font-size: 1.2rem;
   }
-
-  .home .main-text h2 {
-    font-size: 3.5rem;
-  }
-
-  .services .skill h3 {
-    font-size: 1.3rem;
-  }
   .projects .proj .overlay {
-    background: none;
-  }
-  .text {
-    display: none;
-  }
-
-  .control-btn {
-    bottom: 35%;
-  }
-}
-
-/* Small Screen - Tablets */
-@media (min-width: 768px) and (max-width: 991px) {
-  .home h2.name {
-    font-size: 3rem;
-  }
-}
-
-/* Medium Screen */
-@media (min-width: 992px) and (max-width: 1199px) {
-}
-/* Large Screen */
-@media (min-width: 1200px) {
-  .home .main-text {
-    color: #000;
-    margin-top: 100px;
     position: absolute;
-    top: 10%;
-    left: 5%;
+    left: 0;
+    top: 0;
+    right: 0;
+    background-color: #f6f578;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease-in-out;
+    transform: scale(0);
+    opacity: 0.8;
+  }
+
+  .projects .proj:hover .overlay {
+    transform: scale(1);
+    opacity: 1;
   }
 }
 
-/* End Media Query */
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .projects .proj .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    background-color: #f6f578;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease-in-out;
+    transform: scale(0);
+    opacity: 0.8;
+  }
+
+  .projects .proj:hover .overlay {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
