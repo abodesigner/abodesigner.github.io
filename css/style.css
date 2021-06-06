@@ -74,6 +74,17 @@ button:focus {
   /* color: #f2e205; */
   color: #eeb64f;
 }
+
+.social-links a.linkedin {
+  color: #0e76a8;
+}
+.social-links a.github {
+  color: black;
+}
+.social-links a.whatsapp {
+  color: #25d366;
+}
+
 /* End Section One */
 
 /* Start Skills Section */
@@ -89,6 +100,12 @@ button:focus {
   font-family: "Baloo Tamma", cursive;
   margin-bottom: 30px;
   font-size: 2.5rem;
+}
+
+.services p.subheading {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: 40px;
 }
 
 .services .skill {
@@ -164,6 +181,10 @@ button:focus {
 
 .services .skills li {
   margin: 0 20px;
+}
+
+.service-block h5.card-title {
+  color: #dc3545;
 }
 /* End Skills Section */
 
