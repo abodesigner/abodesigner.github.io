@@ -1,9 +1,131 @@
+@media (max-width: 575px) {
+  /* Home Section */
+  .home {
+    background: #f8f9fa;
+    height: 50vh;
+  }
+
+  .home .main-text {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    transform: translate(-30%, -40%);
+    padding-top: 50px;
+  }
+
+  .home .main-text h1 {
+    font-size: 3rem;
+  }
+  .home .main-text h2 {
+    font-size: 2.5rem;
+  }
+
+  .home .main-text p {
+    font-size: 0.75rem;
+  }
+
+  /* Services Section */
+  .services {
+    padding-top: 25px;
+    height: 70vh;
+}
+.services h2.heading{
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.services p.subheading {
+font-size: 1rem;
+}
+  .service-block .card {
+    min-height: 270px;
+  }
+  .service-block h5.card-title{
+    font-size: 1rem;
+    min-height: 38px;
+  }
+  .service-block p.card-text {
+    font-size: 0.85rem;
+  }
+
+  /* Projects */
+  .projects {
+    padding: 25px 0;
+  }
+
+  .projects h2.heading {
+font-size: 2rem;
+  }
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+
+  /* Home Section */
+  /* .home {
+    background: #f8f9fa;
+    height: 50vh;
+  } */
+
+  /* .home .main-text {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    transform: translate(-30%, -40%);
+    padding-top: 50px;
+  }
+
+  .home .main-text h1 {
+    font-size: 3rem;
+  }
+  .home .main-text h2 {
+    font-size: 2.5rem;
+  }
+
+  .home .main-text p {
+    font-size: 0.75rem;
+  } */
+
+  /* Services Section */
+  /* .services {
+    padding-top: 25px;
+    height: 70vh;
+}
+.services h2.heading{
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.services p.subheading {
+font-size: 1rem;
+}
+  .service-block .card {
+    min-height: 270px;
+  }
+  .service-block h5.card-title{
+    font-size: 1rem;
+    min-height: 38px;
+  }
+  .service-block p.card-text {
+    font-size: 0.85rem;
+  } */
+
+  /* Projects */
+  /* .projects {
+    padding: 25px 0;
+  }
+
+  .projects h2.heading {
+font-size: 2rem;
+  } */
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  /* .home {
+    background: #f8f9fa;
+    height: 50vh;
+  } */
   .home .main-text h1 {
     font-size: 3rem;
   }

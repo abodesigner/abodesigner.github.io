@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "Raleway";
+  font-family: 'Raleway', sans-serif;
   src: url("../fonts/Raleway/Raleway-Regular.ttf") format("truetype");
 }
 
@@ -18,6 +18,11 @@
   src: url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
 }
 
+@font-face {
+  font-family: 'Poppins', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+}
+
 /* General */
 button:focus {
   outline: 0;
@@ -25,54 +30,42 @@ button:focus {
 
 /* Start Home Section */
 .home {
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-  background: url("../images/bg.jpg") no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-  text-align: center;
+   height: 100vh;
+   min-height: 500px;
 }
 
-.home .main-text {
-  color: #000;
-  position: absolute;
-  top: 30%;
-  left: 20%;
-  transform: translate(-30%, -20%);
+.home .content h1 {
+  font-size: 70px;
+  color: #042544;
+  font-family: "Baloo Tamma";
 }
 
-/* .control-btn {
-  position: absolute;
-  left: 17%;
-  bottom: 25%;
-} */
+.home .content h5.job {
+  font-family: "Baloo Tamma";
+  color: #69b8df;
 
-.home .main-text h1 {
-  font-size: 6rem;
-  font-family: "Oswald", sans-serif;
 }
 
-.home .main-text h2 {
-  font-size: 5.5rem;
-  font-family: "Oswald", sans-serif;
+.about {
+  font-family: "Open Sans";
 }
 
-.home .main-text p {
-  font-size: 1.5rem;
-  color: #151616;
-  font-family: "Oswald", sans-serif;
-}
-
-.home .btn-warning {
+.home .control-btn .btn.btn-warning {
   background-color: #eeb64f;
   border-color: #eeb64f;
   color: #333;
-  /* margin-top: 250px; */
+  border-radius: 25px;
 }
-.hello-text {
-  /* color: #f2e205; */
-  color: #eeb64f;
+
+.home .control-btn .btn.btn-primary {
+  background-color: #042544;
+  border-color: #042544;
+  border-radius: 25px;
+}
+
+.home .control-btn .btn.btn-primary:hover {
+  background-color: #69b8df;
+  border-color: #69b8df;
 }
 
 .social-links a.linkedin {
@@ -100,6 +93,7 @@ button:focus {
   font-family: "Baloo Tamma", cursive;
   margin-bottom: 30px;
   font-size: 2.5rem;
+  color: #042544;
 }
 
 .services p.subheading {
@@ -108,79 +102,9 @@ button:focus {
   margin-bottom: 40px;
 }
 
-.services .skill {
-  text-align: center;
-  border: 1px solid #dedede;
-  padding-top: 30px;
-  opacity: 0.9;
-}
 
-.services .skill h3 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
-.services .skill p {
-  margin-bottom: 30px;
-}
-
-.services {
-  background-color: #f8f8f8;
-}
-.services .skill {
-  background-color: #f8f8f8;
-}
-.services .skill h3 {
-  font-size: 2rem;
-  margin-bottom: 24px;
-  font-family: "Oswald", sans-serif;
-}
-.services .skill p.design-title {
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  color: #3dd2fb;
-}
-
-.services .skill p.front-title {
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  color: #36d1a1;
-}
-.services .skill .skills {
-  list-style-type: none;
-  padding-left: 0;
-  margin-bottom: 30px;
-}
-.services .skill .skills li {
-  display: inline-block;
-}
-.services .skill .design-skills ul,
-.services .skill .development-skills ul,
-.services .skill .programming-skills ul {
-  list-style-type: none;
-  padding-left: 0;
-  font-weight: 600;
-}
-
-.services .skill #design {
-  color: #3dd2fb;
-}
-.services .skill #front {
-  color: #00cd97;
-}
-.services .skill #back {
-  color: #ffaf38;
-}
-
-.services .skill .development-skills ul li,
-.services .skill .design-skills ul li,
-.services .section:nth-child(2) .skill .programming-skills ul li {
-  font-family: "Raleway", sans-serif;
-}
-
-.services .skills li {
-  margin: 0 20px;
+.service-block .card {
+  margin-bottom: 20px;
 }
 
 .service-block h5.card-title {
@@ -198,32 +122,13 @@ button:focus {
   font-family: "Baloo Tamma", cursive;
   margin-bottom: 30px;
   font-size: 2.5rem;
+  color: #042544;
 }
 
 .projects .proj {
   padding: 0;
   position: relative;
-  /* margin-bottom: 20px; */
 }
-
-/* .projects .proj .overlay {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  background-color: #f6f578;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  transition: 0.3s ease-in-out;
-  transform: scale(0);
-  opacity: 0.8;
-}
-
-.projects .proj:hover .overlay {
-  transform: scale(1);
-  opacity: 1;
-} */
 
 .text a {
   color: #000;
@@ -317,6 +222,9 @@ button:focus {
 
 .contacts .controls ul.links li a:hover {
   opacity: 1;
+}
+.abodesigner {
+  color: #042544;
 }
 /* End Contacts Section */
 
