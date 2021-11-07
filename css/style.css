@@ -1,5 +1,6 @@
-@font-face {
-  font-family: 'Raleway', sans-serif;
+/* FONTS */
+/* @font-face {
+  font-family: "Raleway", sans-serif;
   src: url("../fonts/Raleway/Raleway-Regular.ttf") format("truetype");
 }
 
@@ -7,6 +8,11 @@
   font-family: "Open Sans";
   src: url("../fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Oswald", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+}
+*/
 
 @font-face {
   font-family: "Baloo Tamma";
@@ -14,131 +20,140 @@
 }
 
 @font-face {
-  font-family: "Oswald", sans-serif;
-  src: url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+  font-family: "Poppins", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 }
 
+/* LOGO FONT */
 @font-face {
-  font-family: 'Poppins', sans-serif;
-  src: url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+  font-family: "Permanent Marker", cursive;
+  src: url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 }
 
-/* General */
+/* GENERAL RULES */
 button:focus {
   outline: 0;
 }
 
-/* Start Home Section */
-.home {
-   height: 100vh;
-   min-height: 500px;
+body {
+  background-color: #f8f9fa;
 }
 
-.home .content h1 {
-  font-size: 70px;
-  color: #042544;
-  font-family: "Baloo Tamma";
-}
-
-.home .content h5.job {
-  font-family: "Baloo Tamma";
-  color: #69b8df;
-
-}
-
-.about {
-  font-family: "Open Sans";
-}
-
-.home .control-btn .btn.btn-warning {
-  background-color: #eeb64f;
-  border-color: #eeb64f;
-  color: #333;
-  border-radius: 25px;
-}
-
-.home .control-btn .btn.btn-primary {
-  background-color: #042544;
-  border-color: #042544;
-  border-radius: 25px;
-}
-
-.home .control-btn .btn.btn-primary:hover {
-  background-color: #69b8df;
-  border-color: #69b8df;
-}
-
-.social-links a.linkedin {
-  color: #0e76a8;
-}
-.social-links a.github {
-  color: black;
-}
-.social-links a.whatsapp {
-  color: #25d366;
-}
-
-/* End Section One */
-
-/* Start Skills Section */
-.services {
-  background: url("../images/two.jpeg") no-repeat;
-  background-size: cover;
-  padding-top: 70px;
-  height: 100vh;
-}
-
-.services h2.heading {
-  margin: 0;
-  font-family: "Baloo Tamma", cursive;
-  margin-bottom: 30px;
-  font-size: 2.5rem;
-  color: #042544;
-}
-
-.services p.subheading {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.25rem;
-  margin-bottom: 40px;
-}
-
-
-.service-block .card {
+.custom-divider {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 20px;
 }
-
-.service-block h5.card-title {
-  color: #dc3545;
+.custom-divider-line:first-child {
+  margin-right: 0.2rem;
 }
-/* End Skills Section */
-
-/* Start Projects Section */
-.projects {
-  background-color: #fff;
-  padding: 70px 0;
+.custom-divider-line:last-child {
+  margin-left: 0.2rem;
+}
+.custom-divider-line {
+  width: 100%;
+  max-width: 4rem;
+  height: 0.1rem;
+  background-color: #264653;
+  border-radius: 1rem;
+}
+.fas.fa-s::before {
+  color: #264653;
 }
 
-.projects h2.heading {
-  font-family: "Baloo Tamma", cursive;
+/* NAVBAR */
+.custom-navbar {
+  background-color: #264653;
+}
+.custom-navbar a.navbar-brand {
+  font-size: 1.5rem;
+  line-height: 15px;
+  display: block;
+}
+
+span.logo {
+  font-family: "Permanent Marker", cursive;
+  color: #dcfc8f;
+}
+
+.custom-navbar .navbar-nav .nav-link.active,
+.custom-navbar .navbar-nav .nav-link {
+  font-size: 1.2rem;
+  transition: color 0.3s ease-in-out;
+  color: #f8f8f8;
+}
+
+/* HOME SECTION */
+.home {
+  height: calc(100% - 94px);
+  min-height: 500px;
+  background-color: #85ffbd;
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.home-content img.img-fluid {
+  border-radius: 50%;
+  border: 5px solid #264653;
+  background-color: #f8f8f8;
+}
+
+.home-content-text span.greeting {
+  color: #264653;
+  margin-top: 15px;
+  font-weight: normal;
+  display: block;
+  letter-spacing: 5px;
+  text-align: left;
+  font-size: 2rem;
+  text-transform: capitalize;
+  animation: myAnim 1s ease 1s 1 normal forwards;
+}
+
+.home-content-text span.name {
+  display: block;
+  margin-top: 0;
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: 6px;
+  text-transform: capitalize;
+  color: #264653;
+  font-family: "Poppins", sans-serif;
+}
+
+.home-content-text span.job {
+  font-family: "Poppins", sans-serif;
+  color: #264653;
+  letter-spacing: 5px;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+  display: block;
+}
+
+a.btn-outline-dark {
+  color: #264653;
+  border-color: #264653;
+}
+
+a.btn-outline-dark:hover {
+  background-color: #264653;
+  color: #fff;
+}
+/* End Section One */
+
+/* PROJECTS SECTION */
+.projects h2 {
   margin-bottom: 30px;
-  font-size: 2.5rem;
-  color: #042544;
+  font-size: 2rem;
+  color: #264653;
 }
 
 .projects .proj {
   padding: 0;
   position: relative;
-}
-
-.text a {
-  color: #000;
-  position: absolute;
-  bottom: 10%;
-  right: 10%;
-  text-decoration: none;
-  transition: 0.3s ease-in-out;
-  font-family: "Open Sans", sans-serif;
-  cursor: pointer;
 }
 
 .text .data {
@@ -159,102 +174,53 @@ button:focus {
   color: #dc3545;
 }
 
-.projects .controls {
-  margin-bottom: 50px;
-}
-
-.projects .controls button {
-  outline: none;
-}
-
-.view {
-  display: flex;
-  justify-content: center;
-}
-/* End Projects Section */
-
-/* Start Contacts Section */
-.contacts {
-  color: #f8f8f8;
-  background: url("../images/contact-bg.jpg") no-repeat;
-  background-size: cover;
-  padding: 70px 0;
-}
-
-.contacts h2 {
-  padding-top: 80px;
-  margin: 0;
-  font-family: "Baloo Tamma", cursive;
-  margin-bottom: 30px;
-  font-size: 3rem;
-  color: #6cfeb7;
-}
-.contacts .controls .form-group .form-control {
-  background-color: #1b242f;
-  border-color: #444;
-  border-radius: 0;
-  opacity: 0.9;
-}
-
-.contacts .controls ul.links {
-  list-style-type: none;
-  margin-top: 5px;
-  padding-left: 0;
-}
-
-.contacts .controls ul.links li {
-  display: inline-block;
-  padding-right: 10px;
-}
-
-.contacts .controls .text-muted {
-  margin-top: 30px;
-}
-
-.contacts .controls ul.links li a {
-  color: #69fdb8;
-  opacity: 0.3;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  -moz-transition: opacity 0.3s ease-in-out;
-  -o-transition: opacity 0.3s ease-in-out;
-  -transition: opacity 0.3s ease-in-out;
-}
-
-.contacts .controls ul.links li a:hover {
-  opacity: 1;
-}
-.abodesigner {
-  color: #042544;
-}
-/* End Contacts Section */
-
-#wave {
-  position: relative;
-  height: 70px;
-  width: 600px;
-  background: #e0efe3;
-}
-
-#wave:before {
-  content: "";
-  display: block;
+.text a {
+  color: #000;
   position: absolute;
-  border-radius: 100% 50%;
-  width: 340px;
-  height: 80px;
-  background-color: white;
-  right: -5px;
-  top: 40px;
+  bottom: 5%;
+  right: 5%;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
 }
 
-#wave:after {
-  content: "";
-  display: block;
-  position: absolute;
-  border-radius: 100% 50%;
-  width: 300px;
-  height: 70px;
-  background-color: #e0efe3;
-  left: 0;
-  top: 27px;
+/* ABOUT SECTION */
+.about-section {
+  background-color: #1abc9c;
+  min-height: 300px;
+}
+
+.about-section h2 {
+  color: #264653;
+}
+
+.about-content p.lead {
+  font-size: 1.4rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.about-section .custom-divider .custom-divider-icon .fas.fa-star {
+  color: #264653;
+}
+
+/* CONTACT SECTION */
+.contact h2 {
+  color: #1abc9c;
+}
+
+.contact .custom-divider .custom-divider-icon .fas.fa-star {
+  color: #1abc9c;
+}
+.contact .custom-divider .custom-divider-line {
+  background-color: #1abc9c;
+}
+
+.btn-outline-light.btn-social:hover {
+  background-color: #1abc9c;
+  border-color: #1abc9c;
+}
+/* FOOTER SECTION */
+footer {
+  background-color: #1a252f;
 }

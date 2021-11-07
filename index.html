@@ -11,10 +11,13 @@
     <meta name="author" content="Mohammed abosalem" />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
 
     <!-- Add Fontawsome Icons file -->
     <link rel="stylesheet" href="css/all.css" type="text/css">
+
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
 
     <!-- Add style.css -->
     <link rel="stylesheet" href="css/style.css" type="text/css">
@@ -27,78 +30,66 @@
 
 <body>
 
-    <!-- Start Home Section -->
-    <section class="home d-flex align-items-center">
+    <!-- NAVBAR SECTION -->
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#home">
+                <span class="logo">abosalem</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#projects">Projects <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#about">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#contact">Get in Touch Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <section class="home py-5" id="home">
         <div class="container">
-
-            <div class="row">
-                <div class="col-md-7">
-                    <div class="content">
-                        <h1 class="name">i am Mohammed</h1>
-                        <h5 class="job">Front End Developer.</h5>
-                        <p class="about">
-                            <br>
-                            I have 2+ years experience in web design & development,looking to leverage my skills to
-                            produce an attractive and
-                            convenient products forusers. I have a big desire to aquire more experience
-                            by building more projects and applications.
-                        </p>
-                    </div>
-                    <div class="control-btn mb-5">
-                        <a href="https://drive.google.com/file/d/1htBiVQ6t3_yeSHf2q30A-RgnE8bN84pg/view?usp=sharing"
-                            class="btn btn-primary" target="_blank">
-                            Download CV
-                            <i class="fas fa-download"></i>
-                        </a>
-                        <a href="#projects" class="btn btn-warning project-btn">
-                            See Projects
-                            <i class="fas fa-long-arrow-alt-down"></i>
-                        </a>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/mohammed.abosalim/" target="_blank" class="facebook mr-2">
-                            <i class="fab fa-facebook-square fa-2x"></i> </a>
-
-                        <a href="https://github.com/abodesigner/" target="_blank" target="_blank" class="github mr-2">
-                            <i class="fab fa-github-square fa-2x"></i>
-                        </a>
-                        <a href="https://api.whatsapp.com/send?phone=201276412898" target="_blank" target="_blank"
-                            class="whatsapp mr-2">
-                            <i class="fab fa-whatsapp-square fa-2x"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/mohammedabosalim/" target="_blank" class="linkedin mr-2">
-                            <i class="fab fa-linkedin fa-2x"></i>
-                        </a>
-                    </div>
+            <div class="home-content d-flex justify-content-center align-items-center">
+                <div class="home-content-text mr-auto">
+                    <span class="greeting">hey, i'm</span>
+                    <span class="name">mohammed abosalem</span>
+                    <span class="job">front end developer.</span>
+                    <a href="https://drive.google.com/file/d/1htBiVQ6t3_yeSHf2q30A-RgnE8bN84pg/view?usp=sharing"
+                        class="btn btn-outline-dark btn-lg" target="_blank" type="button">
+                        Download CV
+                        <i class="fas fa-download"></i>
+                    </a>
                 </div>
-                <div class="col-md-5">
-                    <div class="home-bg">
-                        <img src="images/bg-home2.svg" alt="home-background" class="img-fluid d-none d-sm-block">
-                    </div>
-                </div>
+                <img src="images/photo.png" alt="myImage" width="300px" class="img-fluid d-none d-md-block">
             </div>
         </div>
     </section>
-    <!-- End Home Section -->
 
-    <!-- Start Projects Section -->
-    <section class="projects bg-light" id="projects">
-        <h2 class="heading text-center">My Projects</h2>
+    <!-- PROJECTS SECTION -->
+    <section class="projects bg-light pb-4" id="projects">
+        <h2 class="text-center text-uppercase mb-0">Projects</h2>
+        <div class="custom-divider">
+            <div class="custom-divider-line"></div>
+            <div class="custom-divider-icon">
+                <i class="fas fa-star"></i>
+            </div>
+            <div class="custom-divider-line"></div>
+        </div>
         <div class="container">
-            <!-- <div class="row">
-                <div class="col-12 text-center">
-                    <div class="btn-group btn-group-lg controls" role="group" aria-label="btn controls">
-                        <button type="button" class="btn btn-dark selected filter" data-filter="all">All</button>
-                        <button type="button" class="btn btn-danger filter" data-filter=".one">Landing Pages</button>
-                        <button type="button" class="btn btn-info filter" data-filter=".fstack">FullStack
-                            Apps</button>
-                    </div>
-                </div>
-            </div> -->
-            <div class="row" id="Container">
-                <div class="col-md-4 col-6 proj mix one">
+            <div class="row">
+                <div class="col-lg-4 col-6 proj">
                     <a href="https://www.oneemall.net/" target="_blank" class="d-none-lg">
-                        <img src="images/onemall.jpg" alt="oneemal" class="img-fluid">
+                        <img src="images/onemall.jpg" alt="oneemal" class="img-fluid img-thumbnail img-thumbnail">
                     </a>
                     <div class="overlay d-none d-lg-block">
                         <div class="text">
@@ -113,9 +104,9 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 col-6 proj mix one">
+                <div class="col-lg-4 col-6 proj">
                     <a href="https://abodesigner.github.io/wtxhub/" target="_blank" class="d-none-lg">
-                        <img src="images/wtxhub.jpg" alt="wtxhub" class="img-fluid">
+                        <img src="images/wtxhub.jpg" alt="wtxhub" class="img-fluid img-thumbnail">
                     </a>
                     <div class="overlay d-none d-lg-block">
                         <div class="text">
@@ -130,9 +121,9 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 col-6 proj mix one">
+                <div class="col-lg-4 col-6 proj">
                     <a href="https://abodesigner.github.io/lemonAI/" target="_blank" class="d-none-lg">
-                        <img src="images/rsz_lemonall.png" alt="lemonall" class="img-fluid">
+                        <img src="images/lemonall.png" alt="lemonall" class="img-fluid img-thumbnail">
                     </a>
                     <div class="overlay d-none d-lg-block">
                         <div class="text">
@@ -146,9 +137,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-6 proj mix one">
+                <div class="col-lg-4 col-6 proj">
                     <a href="https://abodesigner.github.io/Pyramids-kuwait/" target="_blank" class="d-none-lg">
-                        <img src="images/socialmedia.jpg" alt="Pyramids-kuwait" class="img-fluid">
+                        <img src="images/socialmedia.jpg" alt="Pyramids-kuwait" class="img-fluid img-thumbnail">
                     </a>
                     <div class="overlay d-none d-lg-block">
                         <div class="text">
@@ -163,9 +154,9 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 col-6 proj mix one">
+                <div class="col-lg-4 col-6 proj">
                     <a href="https://abodesigner.github.io/Pyramids-kuwait/" target="_blank" class="d-none-lg">
-                        <img src="images/andlusia.jpg" alt="andalusia_group" class="img-fluid">
+                        <img src="images/andlusia.jpg" alt="andalusia_group" class="img-fluid img-thumbnail">
                     </a>
                     <div class="overlay d-none d-lg-block">
                         <div class="text">
@@ -180,9 +171,9 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 col-6 proj mix one">
+                <div class="col-lg-4 col-6 proj">
                     <a href="https://abodesigner.github.io/Food-Freshness-Checker/" target="_blank" class="d-none-lg">
-                        <img src="images/fresh.jpg" alt="freshness" class="img-fluid">
+                        <img src="images/fresh.jpg" alt="freshness" class="img-fluid img-thumbnail">
                     </a>
                     <div class="overlay d-none d-lg-block">
                         <div class="text">
@@ -197,9 +188,9 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 col-6 proj mix one">
+                <div class="col-lg-4 col-6 proj">
                     <a href="https://abodesigner.github.io/coffeeRun/" target="_blank" class="d-none-lg">
-                        <img src="images/coffeerun.jpg" alt="coffeerun" class="img-fluid">
+                        <img src="images/coffeerun.jpg" alt="coffeerun" class="img-fluid img-thumbnail">
                     </a>
                     <div class="overlay d-none d-lg-block">
                         <div class="text">
@@ -216,9 +207,9 @@
                 </div>
 
 
-                <div class="col-md-4 col-6 proj mix one">
+                <div class="col-lg-4 col-6 proj">
                     <a href="https://abodesigner.github.io/mercato-Coffee/" target="_blank" class="d-none-lg">
-                        <img src="images/mercatto2.jpg" alt="mercatto_project" class="img-fluid">
+                        <img src="images/mercatto2.jpg" alt="mercatto_project" class="img-fluid img-thumbnail">
                     </a>
                     <div class="overlay d-none d-lg-block">
                         <div class="text">
@@ -233,9 +224,9 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 col-6 proj mix one">
+                <div class="col-lg-4 col-6 proj">
                     <a href="https://abodesigner.github.io/mercato-Coffee/" target="_blank" class="d-none-lg">
-                        <img src="images/proj3.jpg" alt="gTarget_project" class="img-fluid">
+                        <img src="images/goldenTarget.jpg" alt="gTarget_project" class="img-fluid img-thumbnail">
                     </a>
                     <div class="overlay d-none d-lg-block">
                         <div class="text">
@@ -251,9 +242,9 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 col-6 proj mix one">
+                <div class="col-lg-4 col-6 proj">
                     <a href="https://abodesigner.github.io/digitopia/" target="_blank" class="d-none-lg">
-                        <img src="images/proj4.jpeg" alt="digitopia_project" class="img-fluid">
+                        <img src="images/proj4.jpeg" alt="digitopia_project" class="img-fluid img-thumbnail">
                     </a>
                     <div class="overlay d-none d-lg-block">
                         <div class="text">
@@ -268,9 +259,9 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 col-6 proj mix one">
+                <div class="col-lg-4 col-6 proj">
                     <a href="https://abodesigner.github.io/el-waha/" target="_blank" class="d-none-lg">
-                        <img src="images/books.jpg" alt="elwaha" class="img-fluid">
+                        <img src="images/books.jpg" alt="elwaha" class="img-fluid img-thumbnail">
                     </a>
                     <div class="overlay d-none d-lg-block">
                         <div class="text">
@@ -287,20 +278,98 @@
                 </div>
             </div>
     </section>
-    <!-- End Projects Section -->
+
+    <!-- ABOUT SECTION -->
+    <div class="about-section py-4 text-light" id="about">
+        <h2 class="text-center text-uppercase mb-0">about me</h2>
+        <div class="custom-divider">
+            <div class="custom-divider-line"></div>
+            <div class="custom-divider-icon">
+                <i class="fas fa-star"></i>
+            </div>
+            <div class="custom-divider-line"></div>
+        </div>
+        <div class="container">
+            <div class="about-content d-flex flex-column align-items-start">
+                <p class="lead">
+                    I'm working as a UI developer since 2016. Welcome to my portfolio.
+                    I'm glad <i class="fas fa-smile-wink"></i> you're here!
+
+                </p>
+                <p class="lead">
+                    My story started in 2014 when i decided to shift my career to web designer. So
+                    i joined a web design course at Taha Hessien Center by Eng. Ali Hamdi,
+                    then i started to learn from online tutorials & solve my issues using google.
+                </p>
+
+                <p class="lead">
+                    I have a good experience in Node.js and Express.js Framework as a backend technologies.
+                </p>
+
+                <p class="lead">
+                    I'm started learning the basics of Vue.js & Vuex state mangement, but now i'm
+                    focusing on React.js to be a MERN stack developer.
+                </p>
+            </div>
+            <div class="text-center">
+                <a href="https://drive.google.com/file/d/1htBiVQ6t3_yeSHf2q30A-RgnE8bN84pg/view?usp=sharing"
+                    class="btn btn-outline-dark btn-lg" target="_blank" type="button">
+                    Download CV
+                    <i class="fas fa-download"></i>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- CONTACT SECTION-->
+    <div class="contact text-center bg-dark text-light py-4" id="contact">
+        <div class="container">
+            <div class="row d-flex flex-column align-items-center justify-content-center">
+
+                <!-- Contact Social Icons-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h2 class="text-uppercase mb-0">Contact Me</h2>
+                    <div class="custom-divider">
+                        <div class="custom-divider-line"></div>
+                        <div class="custom-divider-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="custom-divider-line"></div>
+                    </div>
+                    <a class="btn btn-outline-light btn-social mx-1" target="_blank"
+                        href="https://www.facebook.com/mohammed.abosalim/">
+                        <i class="fab fa-fw fa-facebook-f"></i></a>
+
+                    <a class="btn btn-outline-light btn-social mx-1" target="_blank"
+                        href="https://github.com/abodesigner/"><i class="fab fa-github"></i></a>
+
+                    <a class="btn btn-outline-light btn-social mx-1" target="_blank"
+                        href="https://www.linkedin.com/in/mohammedabosalim/"><i
+                            class="fab fa-fw fa-linkedin-in"></i></a>
+
+                    <a class="btn btn-outline-light btn-social mx-1" target="_blank"
+                        href="https://stackoverflow.com/users/6317252/m-abosalem"><i
+                            class="fab fa-stack-overflow"></i></a>
+
+                </div>
+
+                <!-- Whatsapp -->
+                <div class="col-lg-4">
+                    <p class="lead mb-0 mt-4"><i class="fab fa-whatsapp"></i> <b>(+20) 012-764-128-98</b></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     <!-- Start Footer -->
     <footer>
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <p class="text-muted d-flex justify-content-center pt-3">
-                        copyrights&copy; are reserved to&nbsp;<span
-                            class="abodesigner"><strong>Abodesigner</strong></span>&nbsp;
-                        <span id="year"> </span>.
-                    </p>
-                </div>
-            </div>
+            <p class="text-muted mb-0 py-3 text-center">
+                made with <i class="fas fa-heart" style="color:red"></i> by <span class="logo">abosalem</span>
+                <span id="year"></span>.
+            </p>
         </div>
     </footer>
     <!-- End Footer -->
@@ -308,7 +377,6 @@
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="js/jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/mixitup.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
