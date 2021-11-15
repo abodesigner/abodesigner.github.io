@@ -5,14 +5,14 @@
 }
 
 @font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype");
-}
-@font-face {
   font-family: "Oswald", sans-serif;
   src: url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
 }
 */
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype");
+}
 
 @font-face {
     font-family: "Baloo Tamma";
@@ -202,11 +202,12 @@ span.logo {
 
 .about-section h2 {
     color: #264653;
+    font-weight: bold;
 }
 
 .about-content p.lead {
-    font-size: 1.4rem;
-    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    font-family: "Open Sans";
 }
 
 .about-section .custom-divider .custom-divider-icon .fas.fa-star {
