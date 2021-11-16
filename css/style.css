@@ -85,9 +85,6 @@ span.logo {
     color: #f8f8f8;
     transition: all 0.5s ease;
 }
-.custom-navbar .navbar-nav .nav-link:hover {
-    background-color: red;
-}
 
 /* HOME SECTION */
 .home {
@@ -137,6 +134,19 @@ span.logo {
 
 .home-content-text p.lead {
     color: var(--mainColor);
+}
+
+.effect-hover {
+    overflow: hidden;
+}
+
+.effect-hover img {
+    transform: scale(0.8);
+    transition: all 0.5s ease;
+}
+
+.effect-hover img:hover {
+    transform: scale(1) rotate(360deg);
 }
 
 /* PROJECTS SECTION */
