@@ -1,17 +1,7 @@
 /* FONTS */
-/* @font-face {
-  font-family: "Raleway", sans-serif;
-  src: url("../fonts/Raleway/Raleway-Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Oswald", sans-serif;
-  src: url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
-}
-*/
 @font-face {
     font-family: "Open Sans";
-    src: url("../fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype");
+    src: url("../fonts/static/OpenSans/OpenSans-Regular.ttf") format("truetype");
 }
 
 @font-face {
@@ -30,13 +20,16 @@
     src: url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 }
 
-/* GENERAL RULES */
-button:focus {
-    outline: 0;
+/* CSS VARIABLES */
+:root {
+    --mainColor: #264653;
+    --mainBGColor: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+    --logoColor: #dcfc8f;
 }
 
-body {
-    background-color: #f8f9fa;
+/* GENERAL RULES */
+button:focus {
+    outline: 0 !important;
 }
 
 .custom-divider {
@@ -56,36 +49,33 @@ body {
     width: 100%;
     max-width: 4rem;
     height: 0.1rem;
-    background-color: #264653;
+    background-color: var(--mainColor);
     border-radius: 1rem;
 }
 .fas.fa-s::before {
-    color: #264653;
+    color: var(--mainColor);
 }
 
 a.btn-outline-dark {
-    color: #264653;
-    border-color: #264653;
+    color: var(--mainColor);
+    border-color: var(--mainColor);
 }
 
 a.btn-outline-dark:hover {
-    background-color: #264653;
+    background-color: var(--mainColor);
     color: #fff;
 }
-
 /* NAVBAR */
 .custom-navbar {
-    background-color: #264653;
+    background-color: var(--mainColor);
 }
 .custom-navbar a.navbar-brand {
     font-size: 1.5rem;
-    line-height: 15px;
-    display: block;
 }
 
 span.logo {
     font-family: "Permanent Marker", cursive;
-    color: #dcfc8f;
+    color: var(--logoColor);
 }
 
 .custom-navbar .navbar-nav .nav-link.active,
@@ -93,31 +83,34 @@ span.logo {
     font-size: 1.2rem;
     transition: color 0.3s ease-in-out;
     color: #f8f8f8;
+    transition: all 0.5s ease;
+}
+.custom-navbar .navbar-nav .nav-link:hover {
+    background-color: red;
 }
 
 /* HOME SECTION */
 .home {
     height: calc(100% - 94px);
     min-height: 500px;
-    background-color: #85ffbd;
-    background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+    background-image: var(--mainBGColor);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 
 .home-content img.img-fluid {
     border-radius: 50%;
-    border: 5px solid #264653;
+    border: 5px solid var(--mainColor);
     background-color: #f8f8f8;
 }
 
 .home-content-text span.greeting {
-    color: #fff;
+    color: var(--mainColor);
     margin-top: 15px;
     font-weight: normal;
     display: block;
     letter-spacing: 5px;
     text-align: left;
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-transform: capitalize;
     animation: myAnim 1s ease 1s 1 normal forwards;
 }
@@ -125,35 +118,33 @@ span.logo {
 .home-content-text span.name {
     display: block;
     margin-top: 0;
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: bold;
     letter-spacing: 6px;
     text-transform: capitalize;
-    color: #264653;
+    color: #dc3545;
     font-family: "Poppins", sans-serif;
 }
 
 .home-content-text span.job {
     font-family: "Poppins", sans-serif;
-    color: #fff;
+    color: var(--mainColor);
     letter-spacing: 5px;
-    font-size: 1.2rem;
+    font-size: 3rem;
     text-transform: capitalize;
     margin-bottom: 40px;
     display: block;
 }
 
 .home-content-text p.lead {
-    color: #264653;
-    /* font-family: "Poppins", sans-serif; */
+    color: var(--mainColor);
 }
-/* End Section One */
 
 /* PROJECTS SECTION */
 .projects h2 {
     margin-bottom: 30px;
     font-size: 2rem;
-    color: #264653;
+    color: var(--mainColor);
 }
 
 .projects .proj {
@@ -171,7 +162,7 @@ span.logo {
     color: #000;
     font-size: 15px;
     font-family: "Baloo Tamma", cursive;
-    border-left: 5px solid #264653;
+    border-left: 5px solid var(--mainColor);
     padding: 15px 10px;
 }
 
@@ -180,11 +171,11 @@ span.logo {
 }
 
 .text .data h6 {
-    color: #264653;
+    color: var(--mainColor);
 }
 
 .text a {
-    color: #264653;
+    color: var(--mainColor);
     position: absolute;
     bottom: 5%;
     right: 5%;
@@ -201,7 +192,7 @@ span.logo {
 }
 
 .about-section h2 {
-    color: #264653;
+    color: #fff;
     font-weight: bold;
 }
 
@@ -211,12 +202,12 @@ span.logo {
 }
 
 .about-section .custom-divider .custom-divider-icon .fas.fa-star {
-    color: #264653;
+    color: var(--mainColor);
 }
 
 /* CONTACT SECTION */
 .contact h2 {
-    color: #1abc9c;
+    color: #fff;
 }
 
 .contact .custom-divider .custom-divider-icon .fas.fa-star {

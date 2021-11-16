@@ -1,50 +1,50 @@
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575px) {
-  /* Home Section */
-  .home {
-    min-height: 400px;
-  }
-  .home-content-text span.greeting {
-    text-align: center;
-    font-size: 1.5rem;
-  }
-  .home-content-text span.name {
-    text-align: center;
-    font-size: 1.5rem;
-    letter-spacing: 4px;
-  }
+    /* Home Section */
+    .home {
+        min-height: 400px;
+    }
+    .home-content-text span.greeting {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .home-content-text span.name {
+        text-align: center;
+        font-size: 1.5rem;
+        letter-spacing: 4px;
+    }
 
-  .home-content-text span.job {
-    text-align: center;
-    font-size: 0.75rem;
-  }
+    .home-content-text span.job {
+        text-align: center;
+        font-size: 0.75rem;
+    }
 
-  .home-content-text button.btn-outline-dark {
-    width: 100%;
-    display: block;
-  }
+    .home-content-text button.btn-outline-dark {
+        width: 100%;
+        display: block;
+    }
 
-  /* PROJECTS SECTION */
-  .projects h2 {
-    font-size: 1.5rem;
-  }
+    /* PROJECTS SECTION */
+    .projects h2 {
+        font-size: 1.5rem;
+    }
 
-  /* ABOUT SECTION */
-  .about-section {
-    padding: 15px 0;
-  }
-  .about-section h2 {
-    font-size: 1.5rem;
-  }
+    /* ABOUT SECTION */
+    .about-section {
+        padding: 15px 0;
+    }
+    .about-section h2 {
+        font-size: 1.5rem;
+    }
 
-  .about-content p.lead {
-    text-align: justify;
-  }
+    .about-content p.lead {
+        text-align: justify;
+    }
 
-  /* CONTACT SECTION */
-  .contact h2 {
-    font-size: 1.5rem;
-  }
+    /* CONTACT SECTION */
+    .contact h2 {
+        font-size: 1.5rem;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) = sm */
@@ -57,44 +57,46 @@
 
 /* Large devices (desktops, 992px and up) = lg */
 @media (min-width: 992px) and (max-width: 1199px) {
-  .projects .proj .overlay {
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    background-color: #dcfc8f;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    transition: 0.3s ease-in-out;
-    transform: scale(0);
-    opacity: 0.8;
-  }
+    .projects .proj .overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        /* background-color: #dcfc8f; */
+        background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        transition: 0.3s ease-in-out;
+        transform: scale(0);
+        opacity: 0.8;
+    }
 
-  .projects .proj:hover .overlay {
-    transform: scale(1);
-    opacity: 1;
-  }
+    .projects .proj:hover .overlay {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) = xxl */
 @media (min-width: 1200px) {
-  .projects .proj .overlay {
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    background-color: #dcfc8f;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    transition: 0.3s ease-in-out;
-    transform: scale(0);
-    opacity: 0.8;
-  }
+    .projects .proj .overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        /* background-color: #dcfc8f; */
+        background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        transition: 0.3s ease-in-out;
+        transform: scale(0);
+        opacity: 0.8;
+    }
 
-  .projects .proj:hover .overlay {
-    transform: scale(1);
-    opacity: 1;
-  }
+    .projects .proj:hover .overlay {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
