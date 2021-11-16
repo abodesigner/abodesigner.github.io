@@ -127,7 +127,6 @@ span.logo {
 }
 
 .home-content-text span.job {
-    font-family: "Poppins", sans-serif;
     color: var(--mainColor);
     letter-spacing: 5px;
     font-size: 3rem;
