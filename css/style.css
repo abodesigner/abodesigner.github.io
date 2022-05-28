@@ -22,9 +22,11 @@
 
 /* CSS VARIABLES */
 :root {
-    --mainColor: #264653;
+    /* --mainColor: #264653; */
+    --mainColor: #1d3557;
     --mainBGColor: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
-    --logoColor: #dcfc8f;
+    /* --logoColor: #dcfc8f; */
+    --logoColor: #fff;
 }
 
 /* GENERAL RULES */
@@ -71,7 +73,8 @@ a.btn-outline-dark:hover {
 }
 /* NAVBAR */
 .custom-navbar {
-    background-color: var(--mainColor);
+    /* background-color: var(--mainColor); */
+    background-color: #1d3557;
 }
 .custom-navbar a.navbar-brand {
     font-size: 1.5rem;
@@ -94,7 +97,8 @@ span.logo {
 .home {
     height: calc(100% - 94px);
     min-height: 500px;
-    background-color: #ffe156;
+    /* background-color: #ffe156; */
+    background-color: #a8dadc;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 
@@ -123,7 +127,8 @@ span.logo {
     font-weight: bold;
     letter-spacing: 6px;
     text-transform: capitalize;
-    color: #dc3545;
+    /* color: #dc3545; */
+    color: #e63946;
     font-family: "Poppins", sans-serif;
 }
 
@@ -200,7 +205,8 @@ span.logo {
 
 /* ABOUT SECTION */
 .about-section {
-    background-color: #1abc9c;
+    /* background-color: #1abc9c; */
+    background-color: #457b9d;
     min-height: 300px;
 }
 
@@ -212,6 +218,10 @@ span.logo {
 .about-content p.lead {
     font-size: 1.5rem;
     font-family: "Open Sans";
+}
+
+.custom-divider-icon .fas.fa-star::before {
+    color: var(--mainColor);
 }
 
 .about-section .custom-divider .custom-divider-icon .fas.fa-star {
@@ -229,16 +239,16 @@ span.logo {
     color: #fff;
 }
 
-.contact .custom-divider .custom-divider-icon .fas.fa-star {
-    color: #1abc9c;
+.contact .custom-divider .custom-divider-icon .fas.fa-star::before {
+    color: #a8dadc;
 }
 .contact .custom-divider .custom-divider-line {
-    background-color: #1abc9c;
+    background-color:#a8dadc;
 }
 
 .btn-outline-light.btn-social:hover {
-    background-color: #1abc9c;
-    border-color: #1abc9c;
+    background-color: #a8dadc;
+    border-color: #a8dadc;
 }
 /* FOOTER SECTION */
 footer {
