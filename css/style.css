@@ -14,6 +14,11 @@
     src: url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 }
 
+@font-face {
+    font-family: 'Lato', sans-serif;
+    src: url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+}
+
 /* LOGO FONT */
 @font-face {
     font-family: "Permanent Marker", cursive;
@@ -22,11 +27,9 @@
 
 /* CSS VARIABLES */
 :root {
-    /* --mainColor: #264653; */
-    --mainColor: #1d3557;
-    --mainBGColor: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
-    /* --logoColor: #dcfc8f; */
-    --logoColor: #fff;
+    --mainColor: #005555;
+    --mainBGColor: #F7FF93;
+
 }
 
 /* GENERAL RULES */
@@ -73,8 +76,7 @@ a.btn-outline-dark:hover {
 }
 /* NAVBAR */
 .custom-navbar {
-    /* background-color: var(--mainColor); */
-    background-color: #1d3557;
+    background-color: var(--mainBGColor);
 }
 .custom-navbar a.navbar-brand {
     font-size: 1.5rem;
@@ -82,81 +84,81 @@ a.btn-outline-dark:hover {
 
 span.logo {
     font-family: "Permanent Marker", cursive;
-    color: var(--logoColor);
+    color: var(--mainColor);
 }
 
 .custom-navbar .navbar-nav .nav-link.active,
 .custom-navbar .navbar-nav .nav-link {
     font-size: 1.2rem;
     transition: color 0.3s ease-in-out;
-    color: #f8f8f8;
+    color: var(--mainColor);
     transition: all 0.5s ease;
+}
+
+.custom-navbar .navbar-nav .nav-link.active:hover,
+.custom-navbar .navbar-nav .nav-link:hover {
+    color: #e63946
 }
 
 /* HOME SECTION */
 .home {
     height: calc(100% - 94px);
     min-height: 500px;
-    /* background-color: #ffe156; */
-    background-color: #a8dadc;
+    background-color: var(--mainBGColor);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-}
-
-.home-content img.img-fluid {
-    border-radius: 50%;
-    border: 5px solid var(--mainColor);
-    background-color: #f8f8f8;
-}
-
-.home-content-text span.greeting {
-    color: var(--mainColor);
-    margin-top: 15px;
-    font-weight: normal;
-    display: block;
-    letter-spacing: 5px;
-    text-align: left;
-    font-size: 2.5rem;
-    text-transform: capitalize;
-    animation: myAnim 1s ease 1s 1 normal forwards;
 }
 
 .home-content-text span.name {
     display: block;
     margin-top: 0;
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: bold;
-    letter-spacing: 6px;
     text-transform: capitalize;
-    /* color: #dc3545; */
-    color: #e63946;
-    font-family: "Poppins", sans-serif;
+    color: #005555;
+    font-family: 'Lato', sans-serif;
 }
 
 .home-content-text span.job {
-    color: var(--mainColor);
-    letter-spacing: 5px;
-    font-size: 3rem;
+    position: relative;
+    color: #dc3545;
+    font-size: 1.3rem;
     text-transform: capitalize;
-    margin-bottom: 40px;
+    margin: 10px auto;
+    text-align: center;
     display: block;
+    font-family: 'Lato', sans-serif;
+    max-width: 500px;
+}
+
+.home-content-text span.job::before {
+    content:" ";
+    display: block;
+    height: 2px;
+    width: 130px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background: #dc3545;
+    margin-right: 10px;
 }
 
 .home-content-text p.lead {
     color: var(--mainColor);
+    margin-bottom: 40px;
 }
 
-.effect-hover {
-    overflow: hidden;
+.fa-smile::before {
+    color: #dc3545;
 }
 
-.effect-hover img {
-    transform: scale(0.8);
-    transition: all 0.5s ease;
+.link {
+    margin-right: 20px;
+}
+.social-links a i {
+    color: var(--mainColor);
+    font-size: 1.5rem;
 }
 
-.effect-hover img:hover {
-    transform: scale(1) rotate(360deg);
-}
 
 /* PROJECTS SECTION */
 .projects h2 {
@@ -205,19 +207,20 @@ span.logo {
 
 /* ABOUT SECTION */
 .about-section {
-    /* background-color: #1abc9c; */
-    background-color: #457b9d;
-    min-height: 300px;
+    background-color: #fff;
 }
 
 .about-section h2 {
-    color: #fff;
+    color: var(--mainColor);
     font-weight: bold;
+    font-size: 1.5rem;
+    font-family: 'Lato', sans-serif;
 }
 
-.about-content p.lead {
-    font-size: 1.5rem;
-    font-family: "Open Sans";
+.about-text-section p.lead {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: var(--mainColor);
 }
 
 .custom-divider-icon .fas.fa-star::before {
