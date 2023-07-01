@@ -31,7 +31,7 @@ html {
 /* CSS VARIABLES */
 :root {
     --mainColor: #005555;
-    --mainBGColor: #a9dfcb;
+    --mainBGColor: #ccccff;
 }
 
 /* GENERAL RULES */
@@ -234,20 +234,24 @@ span.logo {
 
 /* CONTACT SECTION */
 .contact {
-    background-color: #2c3e50;
+    background-color: #ffffcc;
     background-size: cover;
     background-attachment: fixed;
 }
 
 .contact h2 {
-    color: #fff;
+    color:var(--mainColor);;
 }
 
 .contact .custom-divider .custom-divider-icon .fas.fa-star::before {
-    color: #a8dadc;
+    color: var(--mainColor);
 }
 .contact .custom-divider .custom-divider-line {
-    background-color: #a8dadc;
+    background-color: var(--mainColor);;
+}
+
+.btn-outline-light.btn-social {
+    background-color: #ffcc99;
 }
 
 .btn-outline-light.btn-social:hover {
@@ -256,5 +260,6 @@ span.logo {
 }
 /* FOOTER SECTION */
 footer {
-    background-color: #1a252f;
+    background-color:#99cccc;
 }
+
