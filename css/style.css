@@ -31,7 +31,8 @@ html {
 /* CSS VARIABLES */
 :root {
     --mainColor: #005555;
-    --mainBGColor: #0fccce;
+    --mainBGColor: #c9e5e6;
+    --mainNavbarBGColor:#0fccce;
 }
 
 /* GENERAL RULES */
@@ -78,7 +79,7 @@ a.btn-outline-dark:hover {
 }
 /* NAVBAR */
 .custom-navbar {
-    background-color: var(--mainBGColor);
+    background-color: var(--mainNavbarBGColor);
 }
 .custom-navbar a.navbar-brand {
     font-size: 1.5rem;
